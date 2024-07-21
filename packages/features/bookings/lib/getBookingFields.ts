@@ -170,7 +170,7 @@ export const ensureBookingInputsHaveSystemFields = ({
       ],
     },
     {
-      defaultLabel: "email_address",
+      defaultLabel: "test email filed",
       type: "email",
       name: "email",
       required: true,
@@ -237,7 +237,7 @@ export const ensureBookingInputsHaveSystemFields = ({
       name: "notes",
       editable: "system-but-optional",
       required: additionalNotesRequired,
-      defaultPlaceholder: "share_additional_notes",
+      defaultPlaceholder: "this is the page of the issue something",
       sources: [
         {
           label: "Default",
@@ -251,7 +251,7 @@ export const ensureBookingInputsHaveSystemFields = ({
       type: "multiemail",
       editable: "system-but-optional",
       name: "guests",
-      defaultPlaceholder: "email",
+      defaultPlaceholder: "email--test",
       required: false,
       hidden: disableGuests,
       sources: [

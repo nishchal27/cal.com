@@ -50,7 +50,7 @@ export const useVerifyEmail = ({
 
   const handleVerifyEmail = () => {
     onVerifyEmail?.();
-
+    console.log("handleVerifyEmail from useVerifyEmail", onVerifyEmail);
     sendEmailVerificationByCodeMutation.mutate({
       email,
       username: typeof name === "string" ? name : name?.firstName,
